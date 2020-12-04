@@ -1,0 +1,16 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ site.github.url }}/favicon.ico" >
+    <link href="{{ site.github.url }}/static/fonts.css" rel="stylesheet" type="text/css">
+    <link href="{{ site.github.url }}/static/site.css" rel="stylesheet" type="text/css">
+  </head>
+  <body id="_top">
+    {% include nav.html %}
+    <main>
+      <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+{{content}}
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

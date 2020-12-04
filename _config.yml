@@ -1,0 +1,13 @@
+title:    "What To Do Next"
+subtitle: "What to do when things go wrong in the classroom (or out of it)"
+url:      "https://gvwilson.github.io/what-to-do-next/"
+repo:     "https://github.com/gvwilson/what-to-do-next/"
+layout:   page.html
+
+scenarios:
+  - slug: "discussion-of-bias"
+    title: "Feedback on a Misguided Discussion of Bias"
+  - slug: "disinterested-learner"
+    title: "Handling a Disinterested Learner"
+  - slug: "only-asking-male-students"
+    title: "Co-instructor Only Calls on Male Students"

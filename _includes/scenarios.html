@@ -1,0 +1,5 @@
+<ul>
+{% for scenario in site.scenarios -%}
+  <li><a href="{{ site.github.url }}/{{ scenario.slug }}/">{{ scenario.title }}</a></li>
+{%- endfor %}
+</ul>

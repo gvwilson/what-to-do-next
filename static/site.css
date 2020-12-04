@@ -1,0 +1,227 @@
+:root {
+    --font-text: "OpenSans";
+    --font-code: "Roboto";
+    --font-size-large: 14pt;
+    --font-size-regular: 12pt;
+    --font-size-small: 11pt;
+    --font-size-tiny: 9pt;
+
+    --border-radius: 0.5em;
+    --border-style: solid;
+    --border-width: 1px;
+
+    --page-background: #e8e8e8;
+    --page-color: #ffffff;
+    --page-highlight: #a0a0a0;
+
+    --padding-zero: 0px;
+    --padding-px: 5px;
+    --padding-half: 0.5em;
+    --padding-em: 1em;
+    --padding-2em: 2em;
+
+    --width-full: 60rem;
+    --line-height: 1.2;
+    --height-1: 1ex;
+    --height-4: 4ex;
+    --height-5: 5ex;
+
+    --callout-background: var(--page-background);
+    --callout-border: var(--page-highlight);
+}
+
+/* General */
+
+body {
+    background-color: var(--page-color);
+    font-family: var(--font-text);
+    font-size: var(--font-size-regular);
+    line-height: var(--line-height);
+    margin-bottom: var(--padding-zero);
+    padding-bottom: var(--padding-zero);
+    width: var(--width-full);
+}
+
+main {
+    border: var(--border-width) var(--border-style) var(--page-background);
+    padding-left: var(--padding-half);
+    padding-right: var(--padding-half);
+}
+
+/* Navigation header */
+
+nav {
+    background-color: var(--page-background);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    height: var(--height-4);
+    padding-left: var(--padding-half);
+    padding-right: var(--padding-half);
+    padding-top: var(--padding-px);
+}
+
+span.navtitle {
+    padding-left: var(--padding-px);
+    padding-right: var(--padding-px);
+}
+
+img.nav-logo {
+    padding-top: 0.25rem;
+    vertical-align: middle;
+    width: 1.5rem;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    background-color: var(--page-background);
+    box-shadow: 2px 8px 16px 2px rgba(0,0,0,0.2);
+    display: none;
+    padding: 8px;
+    position: absolute;
+    text-align: left;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.disabled {
+    color: var(--page-highlight);
+    font-style: italic;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--page-background);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    font-size: var(--font-size-small);
+    height: var(--height-5);
+    margin-bottom: var(--padding-px);
+    padding-left: var(--padding-half);
+    padding-right: var(--padding-half);
+    padding-top: var(--height-1);
+}
+
+img.footer {
+    height: var(--height-4);
+    vertical-align: middle;
+}
+
+/* Multi-column layouts */
+
+div.row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+div.left2 {
+    float: left;
+    text-align: left;
+    width: 50%;
+}
+
+div.right2 {
+    float: right;
+    text-align: right;
+    width: 50%;
+}
+
+div.left3 {
+    float: left;
+    text-align: left;
+    width: 30%;
+}
+
+div.middle3 {
+    float: left;
+    text-align: center;
+    width: 40%;
+}
+
+div.right3 {
+    float: left;
+    text-align: right;
+    width: 30%;
+}
+
+/* Callouts */
+
+div.scenario {
+    background-color: var(--callout-background);
+    border-color: var(--callout-border);
+    border-radius: var(--border-radius);
+    border-style: var(--border-style);
+    border-width: var(--border-width);
+    margin-bottom: var(--padding-em);
+    padding-left: var(--padding-half);
+    padding-right: var(--padding-half);
+}
+
+/* Content */
+
+h1 {
+    text-align: center;
+}
+
+ol, ul {
+    padding-left: 1.2em;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+li p {
+    text-indent: 0rem;
+}
+
+/* Tables */
+
+th {
+    background-color: var(--page-background);
+    border-bottom: 1px solid var(--page-highlight);
+    padding-left: var(--padding-px);
+    padding-right: var(--padding-px);
+    padding: 0.5em;
+    text-align: left;
+    vertical-align: top;
+}
+
+td {
+    padding: 0.5em;
+    vertical-align: top;
+}
+
+tr:nth-child(even) {
+    background-color: var(--page-background);
+}
+
+/* Code */
+
+code {
+    background-color: var(--page-background);
+    font-family: var(--font-code);
+    font-size: var(--font-size-small);
+}
+
+pre {
+    border-radius: var(--border-radius);
+    border-style: var(--border-style);
+    border-width: var(--border-width);
+    overflow-x: auto;
+    padding-bottom: var(--padding-px);
+    padding-left: var(--padding-half);
+    padding-top: var(--padding-px);
+}
